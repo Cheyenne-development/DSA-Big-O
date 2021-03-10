@@ -46,7 +46,6 @@ As all primes except for 2 are odd and multiplying by an even number results in 
 ```javascript
 function isWhat(n) {
   let len = n ** .5
-   let limit = Math.floor(len)
   if ((n < 2 || n % 1 !== 0 || n % 2 === 0) && n !== 2) {
         return false;
   } else if (Number.isInteger(len)) {
@@ -60,7 +59,6 @@ function isWhat(n) {
 
     }
   }
- console.log(limit/2)
     return true;
 }
 ```
